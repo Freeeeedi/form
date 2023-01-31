@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Manrope:wght@600&display=swap"
+        rel="stylesheet">
+    <title>Web form</title>
+</head>
+
+<body>
+    <main class="main">
+        <div class="popup">
+            <div class="popup__logo">
+                <img src="./img/logo.svg" alt="">
+            </div>
+            <div class="popup__title">
+                Изменение пароля
+            </div>
+            <div class="popup__form-container">
+                <form method="post" class="popup__form form">
+                    <div class="form__input-container">
+                        <input type="text" name="login" id="login" class="form__input" placeholder="Email / Логин">
+                        <p class="text-error"></p>
+                    </div>
+                    <div class="form__input-container">
+                        <input type="text" name="key" id="key" class="form__input" placeholder="Контрольная строка">
+                        <p class="text-error">Неверное контрольное слово</p>
+                    </div>
+                    <div class="form__input-container">
+                        <input type="password" name="new_password" id="new_password" class="form__input form__password"
+                            placeholder="Новый пароль">
+                        <img src="./img/close-eye.svg" alt="" class="form__password-eye close">
+                        <p class="text-error">Пароль должен быть не менее 6 символов </p>
+                    </div>
+                    <div class="form__input-container">
+                        <input type="password" name="password_agree" id="password_agree"
+                            class="form__input form__password" placeholder="Подтверждение пароля">
+                        <p class="text-error">Пароли не совпадают</p>
+                    </div>
+                    <p class="popup__text"><span>*</span> Обязательные поля</p>
+                    <div class="popup__actions">
+                        <div class="form__submit">
+                            <span>Изменить пароль</span>
+                        </div>
+                        <div class="popup__actions-login">
+                            <a href="#" class="regestration">Зарегистироваться</a>
+                            <a href="#" class="login">Войти</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
